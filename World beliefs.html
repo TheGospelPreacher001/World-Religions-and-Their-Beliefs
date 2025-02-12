@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Religions and Their Beliefs</title>
+    <style>
+        body {
+            font-family: cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #343a40;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+            font-size: 2em;
+            margin-top: 30px;
+        }
+        .religion {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #ffffff;
+            border-left: 6px solid #007bff;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .religion:hover {
+            transform: scale(1.02);
+        }
+        p {
+            font-size: 1.2em;
+            text-align: justify;
+        }
+        .search-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .suggestions {
+            position: absolute;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: none;
+            max-width: 200px;
+        }
+        .suggestions div {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .suggestions div:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search religions...">
+        <div class="suggestions" id="suggestions"></div>
+    </div>
+    <div class="container">
+        <h1>World Religions and Their Beliefs</h1>
+        <p>This page provides an in-depth overview of different religions and cults, detailing their origins and core beliefs.</p>
+        <div class="religion" id="Christianity">
+            <h2>Christianity</h2>
+            <p>Christianity is the largest religion in the world, with over two billion adherents globally. It was founded in the 1st century AD, based on the teachings of Jesus Christ, who Christians believe is the Son of God and the Messiah (meaning "Savior") prophesied in the Old Testament. Christianity holds that Jesus, through His death and resurrection, offers salvation to all humanity, and that faith in Him as Lord and Savior is the path to eternal life.</p>
+            <p>The Bible, comprising the Old and New Testaments, is the sacred scripture of Christianity. The Old Testament shares many of its books with the Hebrew Bible, while the New Testament records the life, death, and resurrection of Jesus Christ, as well as the teachings of His apostles. Christians believe that God exists in three persons, often called the Trinity: God the Father, God the Son (Jesus Christ), and the Holy Spirit. The doctrine of the Trinity emphasizes the belief that these three persons are distinct yet co-equal and co-eternal.</p>
+            <p>Christianity teaches that humans are sinful by nature due to the Fall of Adam and Eve and that redemption and eternal life are only achievable through faith in Jesus Christ. The practice of baptism symbolizes the believer’s identification with Jesus' death, burial, and resurrection, while communion (the Eucharist) commemorates the Last Supper, where Jesus shared bread and wine with His disciples. There are many denominations within Christianity, including Roman Catholicism, Protestantism (which encompasses denominations like Baptists, Methodists, and Lutherans), and Eastern Orthodoxy.</p>
+        </div>
+        <div class="religion" id="Catholicism">
+            <h2>Catholicism</h2>
+            <p>Catholicism is the largest Christian denomination, with over one billion members worldwide. It traces its origins to the early Christian Church, particularly the teachings of Jesus Christ and the apostles, with a particular emphasis on the authority of the Pope, the Bishop of Rome, as the spiritual leader of all Catholics. Catholicism holds that the Pope is the successor to Saint Peter, whom Jesus appointed as the head of His Church.</p>
+            <p>The Catholic Church has a rich tradition of doctrine, sacraments, and rituals. Key beliefs include the importance of the sacraments, such as Baptism, the Eucharist (Communion), and Confirmation, as well as devotion to the Virgin Mary and the saints. Catholics also emphasize the necessity of both faith and good works for salvation, and they believe in the authority of the Church's teachings and traditions in interpreting Scripture.</p>
+            <p>Catholic worship includes the celebration of the Mass, where the Eucharist is central. This sacrament is believed to be the literal body and blood of Christ, a doctrine known as transubstantiation. Catholics also practice penance, including confession of sins and acts of contrition. The Catholic Church has played a significant role in history, including shaping Western civilization, spreading education, and providing humanitarian aid. The Vatican, located in Rome, is the center of Catholicism and serves as the seat of the Pope.</p>
+        </div>
+        <div class="religion" id="Islam">
+            <h2>Islam</h2>
+            <p>Islam was founded in the 7th century AD in the Arabian Peninsula by the prophet Muhammad. Muhammad is believed by Muslims to be the final prophet in a long line of prophets, including Adam, Noah, Abraham, Moses, and Jesus. Islam teaches that there is only one God (Allah), and that Muhammad received divine revelation through the angel Gabriel. These revelations were recorded in the Quran, the holy book of Islam, which is considered the literal word of God.</p>
+            <p>The core beliefs of Islam are encapsulated in the Five Pillars of Islam: Shahada (faith), Salat (prayer), Zakat (charity), Sawm (fasting), and Hajj (pilgrimage). Muslims are required to pray five times a day, fast during the month of Ramadan, give to charity, and make a pilgrimage to Mecca at least once in their lifetime if financially and physically able to do so.</p>
+            <p>Islamic worship is centered around the mosque, where Muslims gather for prayers and community activities. The two main branches of Islam are Sunni and Shia, with the majority of Muslims being Sunni. The differences between the two branches primarily stem from disagreements over the succession of leadership after the death of Muhammad. Muslims also believe in a Day of Judgment when all individuals will be held accountable for their deeds in this life.</p>
+        </div>
+        <div class="religion" id="Hinduism">
+            <h2>Hinduism</h2>
+            <p>Hinduism is one of the world’s oldest religions, with roots tracing back over 4,000 years in the Indian subcontinent. It is a diverse and pluralistic religion with no single founder or central religious authority. Hinduism is based on the belief in a supreme being, Brahman, who is formless, eternal, and all-pervading. Hindus believe in the cycle of birth, death, and rebirth (samsara), and that the ultimate goal is to achieve liberation (moksha) from this cycle.</p>
+            <p>Hinduism encompasses a variety of practices, beliefs, and gods. There are many deities in Hinduism, including Brahma (the creator), Vishnu (the preserver), and Shiva (the destroyer), who represent different aspects of the divine. Hindus believe in karma (the law of cause and effect) and dharma (righteous living), which guide their moral and spiritual lives.</p>
+            <p>Hindu rituals include offerings to gods, meditation, chanting of mantras, and yoga. The sacred texts of Hinduism include the Vedas, the Upanishads, the Bhagavad Gita, and the Ramayana. The Bhagavad Gita is a particularly important scripture, containing the dialogue between the warrior prince Arjuna and the god Krishna, who serves as his charioteer and spiritual guide.</p>
+        </div>
+        <div class="religion" id="Buddhism">
+            <h2>Buddhism</h2>
+            <p>Buddhism originated in the 5th-4th century BC in present-day Nepal and India, founded by Siddhartha Gautama, known as the Buddha. The Buddha was born as a prince but left his royal life to seek enlightenment. After meditating under the Bodhi tree, he attained Nirvana, the state of perfect peace and liberation from suffering. Buddhism teaches that suffering (dukkha) is an inherent part of life, and the path to ending suffering is through the cessation of desire and attachment.</p>
+            <p>The Four Noble Truths are central to Buddhist belief: (1) the truth of suffering, (2) the truth of the cause of suffering (craving and attachment), (3) the truth of the end of suffering (Nirvana), and (4) the truth of the path that leads to the cessation of suffering (the Eightfold Path). The Eightfold Path is a guide to ethical conduct, mental discipline, and wisdom, and includes right speech, right action, right livelihood, and right mindfulness.</p>
+            <p>Buddhism does not focus on the worship of gods but rather emphasizes personal spiritual development. Meditation is a central practice in Buddhism, and there are many different schools, including Theravada, Mahayana, and Vajrayana, which interpret and practice Buddhist teachings in varying ways. Buddhists believe in reincarnation, and the goal of their practice is to attain enlightenment and escape the cycle of birth and rebirth.</p>
+        </div>
+        <div class="religion" id="Mormonism">
+            <h2>Mormonism (LDS Church)</h2>
+            <p>The Church of Jesus Christ of Latter-day Saints, commonly known as Mormonism, was founded in the 19th century by Joseph Smith in the United States. Smith claimed to have been visited by God the Father and Jesus Christ in 1820, leading to the restoration of the true Christian Church. Mormons believe that the Bible is the word of God, but they also accept the Book of Mormon, which Smith translated from golden plates he discovered in the 1820s, as an additional sacred scripture.</p>
+            <p>Mormonism teaches that after the death of Jesus Christ, His original Church was lost due to corruption and apostasy, and that it was restored through Joseph Smith. Mormons believe that God speaks through living prophets and that the priesthood authority has been restored to the earth. They also emphasize family life, community service, and missionary work. Mormons believe in salvation for all, including the opportunity for deceased individuals to accept the gospel through posthumous baptism.</p>
+            <p>Mormon worship involves attending church services and partaking in ordinances such as baptism and the sacrament (similar to communion). Mormons also emphasize the importance of temple worship, where sacred ordinances, such as eternal marriage and baptism for the dead, are performed.</p>
+        </div>
+        <div class="religion" id="Jehovahs_Witnesses">
+            <h2>Jehovah's Witnesses</h2>
+            <p>Jehovah’s Witnesses originated in the late 19th century under the leadership of Charles Taze Russell, who sought to restore what he believed were the true teachings of Christianity. Jehovah’s Witnesses believe that God's Kingdom was established in heaven in 1914, and that the end of the world is imminent. They believe that Jesus Christ is the Son of God, but they reject the traditional doctrine of the Trinity, viewing God as a singular entity.</p>
+            <p>The core beliefs of Jehovah's Witnesses include the rejection of blood transfusions, participation in the military, and involvement in political affairs. They also believe in the importance of evangelizing and spreading their faith, which is often done through door-to-door ministry. Jehovah’s Witnesses celebrate only the Memorial of Christ’s death and avoid celebrating holidays such as Christmas and birthdays, which they believe have pagan origins.</p>
+            <p>Jehovah’s Witnesses believe that only 144,000 faithful Christians will go to heaven, while the rest of the righteous will live forever on Earth in a paradise. They reject the concept of Hell, believing that the wicked will be annihilated rather than eternally tormented.</p>
+        </div>
+        <div class="religion" id="Sikhism">
+            <h2>Sikhism</h2>
+            <p>Sikhism was founded in the late 15th century in Punjab, India, by Guru Nanak and his successors. Sikhism emphasizes devotion to one God and living a life of equality, service, and justice. The central tenet of Sikhism is the belief in one, formless God, who is beyond human comprehension but is present in all of creation.</p>
+            <p>Sikhs believe in the importance of living an honest life, meditating on God's name, and serving others, particularly the marginalized. Sikhism rejects the caste system and teaches that all humans are equal, regardless of their background or status. The teachings of Sikhism are recorded in the Guru Granth Sahib, the central religious scripture of Sikhism, which is treated with great reverence.</p>
+            <p>Sikhism has a unique identity, including the Five Ks (articles of faith) that practicing Sikhs are expected to maintain: Kesh (uncut hair), Kara (a steel bracelet), Kanga (a wooden comb), Kachera (cotton undergarments), and Kirpan (a ceremonial sword). Sikhism encourages participation in community service, and the practice of langar (free community kitchen) is an important aspect of Sikh worship, where meals are served to all, regardless of background.</p>
+        </div>
+        <div class="religion" id="Taoism">
+            <h2>Taoism</h2>
+            <p>Taoism originated in ancient China and is based on the teachings of Laozi, emphasizing harmony with the Tao, which is understood as the fundamental principle of the universe. Taoism teaches that the Tao is the natural order of things, and human beings should strive to live in accordance with it. The goal of Taoism is to live a life of simplicity, humility, and peace, in harmony with both nature and the universe.</p>
+            <p>Taoism incorporates practices such as meditation, Tai Chi, and Qigong, all aimed at cultivating health, longevity, and spiritual growth. Taoist teachings also emphasize the importance of balancing the forces of Yin and Yang, representing complementary opposites that exist in everything. Taoism is both a philosophy and a religion, with spiritual practices aimed at aligning the individual with the Tao.</p>
+            <p>The central text of Taoism is the *Tao Te Ching*, attributed to Laozi, which offers wisdom on living a balanced, virtuous life. Taoism has had a profound influence on Chinese culture, including art, medicine, and politics.</p>
+        </div>
+        <div class="religion" id="Shinto">
+            <h2>Shinto</h2>
+            <p>Shinto is the indigenous spirituality of Japan, focusing on kami (spirits) and rituals to maintain harmony with nature. It has no single founder and no sacred scripture, but it revolves around the worship of kami, which can be spirits of nature, ancestors, or deities. Shinto was first practiced in Japan in ancient times, and its traditions can be traced back to at least the 8th century AD.</p>
+            <p>The primary Shinto ritual is the worship of kami at shrines, where offerings are made, prayers are said, and festivals are held. Shinto shrines are often located in natural settings, emphasizing the belief in the sacredness of nature. The rituals and practices of Shinto are aimed at maintaining harmony and purity, both in the individual and in the larger community. Purification rituals, such as washing hands and mouth before entering a shrine, are a common practice to maintain spiritual cleanliness.</p>
+            <p>Shinto has no founder or specific doctrine, but it has deeply influenced Japanese culture and traditions. The emperor of Japan is traditionally regarded as the highest spiritual authority in Shinto, though in modern times, Shinto has become a more personal and community-oriented practice. Shinto and Buddhism often coexist in Japan, with many Japanese people practicing both religions simultaneously, especially during key life events like birth, marriage, and death.</p>
+        </div>
+        <div class="religion" id="Zoroastrianism">
+            <h2>Zoroastrianism</h2>
+            <p>Zoroastrianism is one of the world's oldest monotheistic religions, founded by the prophet Zoroaster (or Zarathustra) in ancient Persia, around the 6th century BC. It is centered on the worship of Ahura Mazda, the supreme god who is viewed as the source of all good, and the opposition of Angra Mainyu, the spirit of evil. Zoroastrianism teaches that the universe is a battleground between good and evil, and human beings play a key role in this cosmic struggle by choosing to live virtuous lives and follow the path of truth.</p>
+            <p>The central tenets of Zoroastrianism include the concept of free will, the importance of living a righteous life (known as Asha), and the belief in an afterlife where individuals are judged based on their actions. Zoroastrians believe in the eventual triumph of good over evil, with the resurrection of the dead and the restoration of the world to its original perfection.</p>
+            <p>The sacred texts of Zoroastrianism are contained in the Avesta, which includes hymns, prayers, and rituals. Zoroastrians practice rituals such as fire worship, as fire symbolizes the divine presence and purity. Though Zoroastrianism was once the state religion of the Persian Empire, today it has a much smaller following, primarily in Iran and India (where they are known as Parsis).</p>
+        </div>
+        <div class="religion" id="Confucianism">
+            <h2>Confucianism</h2>
+            <p>Confucianism, founded by Confucius in the 5th century BC in China, is a philosophical and ethical system that emphasizes the importance of morality, social harmony, and respect for tradition. Confucianism is not a religion in the traditional sense, as it does not focus on worshiping gods but instead provides a framework for living a virtuous life and fostering social order. At the heart of Confucian thought is the idea of "Ren" (humaneness or benevolence), which calls for compassion, kindness, and the cultivation of virtues in oneself and others.</p>
+            <p>Confucianism places great emphasis on the Five Relationships: ruler-subject, parent-child, husband-wife, elder-younger, and friend-friend, each with its own set of duties and responsibilities. By adhering to these roles and performing one's duties, individuals can help create a harmonious and orderly society. The practice of filial piety, or respect for one's parents and ancestors, is a cornerstone of Confucian ethics.</p>
+            <p>The central text of Confucianism is the *Analects*, a collection of sayings and ideas attributed to Confucius and his disciples. Confucianism has greatly influenced Chinese society, as well as other East Asian cultures, shaping aspects of education, government, and family life.</p>
+        </div>
+        <div class="religion" id="Baha'i_Faith">
+            <h2>Baha'i Faith</h2>
+            <p>The Baha'i Faith was founded by Baha'u'llah in the 19th century in Persia (modern-day Iran). It teaches that there is only one God, and that all major world religions are expressions of the same divine truth. The Baha'i Faith holds that humanity is in the process of a spiritual evolution and that the teachings of various prophets—such as Moses, Jesus, Muhammad, and others—are part of a continuing revelation from God.</p>
+            <p>The central tenets of the Baha'i Faith include the belief in the oneness of humanity, the unity of all religions, and the equality of men and women. Baha'is believe in the establishment of world peace and justice, and they advocate for the elimination of prejudice, the advancement of education, and the promotion of the common good. Baha'is are also encouraged to work towards the spiritual and material progress of society.</p>
+            <p>The Baha'i Faith emphasizes community life, with local and national gatherings that are open to people of all backgrounds. The Baha'i holy scriptures include the writings of Baha'u'llah and the Bab, and Baha'is are encouraged to engage in prayer, reflection, and acts of service. The Baha'i Faith has a global following, with adherents in virtually every country around the world.</p>
+        </div>
+    </div>
+
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById("search");
+        const suggestions = document.getElementById("suggestions");
+        const religions = document.querySelectorAll(".religion");
+
+        searchInput.addEventListener("input", function () {
+            const query = searchInput.value.toLowerCase();
+            suggestions.innerHTML = "";
+            if (query) {
+                religions.forEach(function (religion) {
+                    if (religion.id.toLowerCase().includes(query)) {
+                        const suggestion = document.createElement("div");
+                        suggestion.textContent = religion.querySelector("h2").textContent;
+                        suggestion.addEventListener("click", function () {
+                            window.location.hash = religion.id;
+                            searchInput.value = religion.querySelector("h2").textContent;
+                            suggestions.style.display = "none";
+                        });
+                        suggestions.appendChild(suggestion);
+                    }
+                });
+                if (suggestions.childElementCount > 0) {
+                    suggestions.style.display = "block";
+                } else {
+                    suggestions.style.display = "none";
+                }
+            } else {
+                suggestions.style.display = "none";
+            }
+        });
+
+        // Hide suggestions when clicking outside
+        document.addEventListener("click", function (event) {
+            if (!event.target.closest(".search-container")) {
+                suggestions.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
